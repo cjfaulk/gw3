@@ -14,6 +14,7 @@ body {
 	font-family: "jay-gothic-urw", sans-serif;
 	font-weight: 300;
 	font-style: normal;
+	font-size: 2rem;
 }
 
 /*-------------- index.html Styling ----------------*/
@@ -22,9 +23,40 @@ body {
 
 
 
+/*-------------- Sub-Page Header Styling ----------------*/
+
+.subpage-header {
+	padding: 3%;
+	text-align: center;
+}
+
+.subpage-header nav a {
+	color: #fff338;
+	text-decoration: none;
+}
+
+
 /*-------------- maps.html Styling ----------------*/
 
 
 
 
 /*-------------- winners.html Styling ----------------*/
+
+
+
+
+/*-------------- START 450px MEDIA QUERY ----------------*/
+
+@media (min-width: 450px) {
+
+	.subpage-header nav ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		list-style-type: none;
+	}
+
+}
+
+/*-------------- END 450px MEDIA QUERY ----------------*/
