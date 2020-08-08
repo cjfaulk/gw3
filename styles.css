@@ -105,12 +105,20 @@ body {
 	max-width: 290px;
 }
 
+
 #winner-section h2 {
 	color: white;
 	font-weight: 300;
 	text-align: center;
 	position: relative;
 	top: 12%;
+	z-index: 10;
+}
+
+#winner-section img:hover, #winner-section img:focus, #winner-section img:active {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	transition: .3s;
 }
 
 #winner-section {
