@@ -90,7 +90,40 @@ body {
 
 /*-------------- winners.html Styling ----------------*/
 
+#win-title {
+	font-size: 5rem;
+	padding: 10% 0 10% 0;
+	text-align: center;
+}
 
+#hide {
+	display: none;
+}
+
+#winner-section img {
+	width: 90vw;
+	max-width: 290px;
+}
+
+#winner-section h2 {
+	color: white;
+	font-weight: 300;
+	text-align: center;
+	position: relative;
+	top: 12%;
+}
+
+#winner-section {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#winner-section article {
+	padding: 0 2% 0 2%;
+}
 
 
 /*-------------- START 450px MEDIA QUERY ----------------*/
@@ -136,6 +169,11 @@ body {
 		margin: auto;
 	}
 
+	/*-------------- winners.html Styling ----------------*/
+
+	#win-title{
+		padding: 2% 0 4% 0;
+	}
 }
 /*-------------- END 600px MEDIA QUERY ----------------*/
 
@@ -159,6 +197,12 @@ body {
 
 	#map-section h1 {
 	    padding: 0 0 4% 0;
+	}
+
+	/*-------------- winners.html Styling ----------------*/
+
+	#win-title {
+		padding: 0 0 4% 0;
 	}
 
 }
