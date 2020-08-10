@@ -19,8 +19,98 @@ body {
 
 /*-------------- index.html Styling ----------------*/
 
+#homepage body {
+	text-align: center;
+	margin: auto;
+}
+
+#homepage header nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+.background-set {
+	position: relative;
+}
+#background {
+	width: 100%;
+}
+
+#left-sign {
+	width: 15%;
+	position: absolute;
+	top: 27%;
+	left: 21%;
+}
+
+#right-sign {
+	width: 15%;
+	position: absolute;
+	top: 26%;
+	right: 21%;
+}
 
 
+.netflix {
+	display: block;
+	padding-top: 10%;
+	padding-bottom: 30%;
+	padding-left: 3%;
+	width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+/* ------- Positioning sign text --------*/
+
+header nav ul li {
+	list-style-type: none;
+}
+
+
+#maps-link {
+	position: absolute;
+	font-size: 5vw;
+	top: 28.5%;
+	left: 24.2%;
+	transform: rotate(-10deg); /*---- tilts sideways ----*/
+	z-index: 101;
+	text-shadow: .2px .2px black;
+}
+
+#winners-link {
+	position: absolute;
+	font-size: 3.5vw;
+	top: 28.5%;
+	right: 24.5%;
+	transform: rotate(10deg);
+	z-index: 100;
+	text-shadow: .2px .2px black;
+}
+
+/* -------------------- sign wobble ------------------ */
+
+#right-sign, #left-sign {
+	-webkit-animation-name: hvr-wobble-skew;
+	animation-name: hvr-wobble-skew;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	}
+
+	#winners-link:hover, #maps-link:hover {
+		-webkit-animation-name: hvr-wobble-skew;
+		animation-name: hvr-wobble-skew;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-timing-function: ease-in-out;
+		animation-timing-function: ease-in-out;
+		-webkit-animation-iteration-count: 1;
+		animation-iteration-count: 1;
+	}
 
 
 /*-------------- Sub-Page Header Styling ----------------*/
@@ -145,12 +235,27 @@ body {
 		list-style-type: none;
 	}
 
+	#homepage footer {
+		display: none;
+	}
+
+	.netflix {
+		width: 80vw;
+	}
+
 }
 /*-------------- END 450px MEDIA QUERY ----------------*/
 
 /*-------------- START 600px MEDIA QUERY ----------------*/
 
 @media (min-width: 600px) {
+
+ /* --------- index.htm styling ---------*/
+
+ 	.netflix {
+		padding-bottom: 10%;
+	}
+
 
 	/*-------------- maps.html Styling ----------------*/
 
@@ -184,6 +289,19 @@ body {
 	}
 }
 /*-------------- END 600px MEDIA QUERY ----------------*/
+
+/* ------------------ START 800PX MEDIA QUERY ----------*/
+
+@media (min-width: 800px) {
+
+	.netflix {
+		width: 50vw;
+		padding-bottom: 0%;
+		padding-top: 4%;
+	}
+}
+
+/* ------------------ END 800PX MEDIA QUERY ----------*/
 
 /*-------------- START 900px MEDIA QUERY ----------------*/
 
@@ -269,4 +387,13 @@ body {
     -webkit-transform: skew(0);
     transform: skew(0);
   }
+}
+
+/* ------------------
+@media (min-width: 800px) {
+
+	.netflix {
+		width: 50vw;
+		padding-bottom: 5%;
+	}
 }
