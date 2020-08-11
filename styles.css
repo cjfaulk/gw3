@@ -75,7 +75,7 @@ header nav ul li {
 	left: 24.2%;
 	transform: rotate(-10deg); /*---- tilts sideways ----*/
 	z-index: 101;
-	text-shadow: .2px .2px black;
+	text-shadow: .5px .5px black;
 }
 
 #winners-link {
@@ -85,7 +85,7 @@ header nav ul li {
 	right: 24.5%;
 	transform: rotate(10deg);
 	z-index: 100;
-	text-shadow: .2px .2px black;
+	text-shadow: .5px .5px black;
 }
 
 /* -------------------- sign wobble ------------------ */
@@ -101,7 +101,7 @@ header nav ul li {
 	animation-iteration-count: 1;
 	}
 
-	#winners-link:hover, #maps-link:hover {
+	#winners-link:hover, #maps-link:hover, .netflix:hover {
 		-webkit-animation-name: hvr-wobble-skew;
 		animation-name: hvr-wobble-skew;
 		-webkit-animation-duration: 1s;
@@ -290,7 +290,7 @@ header nav ul li {
 }
 /*-------------- END 600px MEDIA QUERY ----------------*/
 
-/* ------------------ START 800PX MEDIA QUERY ----------*/
+/*------------------ START 800PX MEDIA QUERY ----------*/
 
 @media (min-width: 800px) {
 
@@ -301,7 +301,7 @@ header nav ul li {
 	}
 }
 
-/* ------------------ END 800PX MEDIA QUERY ----------*/
+/*------------------ END 800PX MEDIA QUERY ----------*/
 
 /*-------------- START 900px MEDIA QUERY ----------------*/
 
