@@ -388,12 +388,3 @@ header nav ul li {
     transform: skew(0);
   }
 }
-
-/* ------------------
-@media (min-width: 800px) {
-
-	.netflix {
-		width: 50vw;
-		padding-bottom: 5%;
-	}
-}
